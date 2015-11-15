@@ -33,14 +33,21 @@
 }
 .top_image {
     margin-left: 17px;
-    height: 74%;
+    height: 80%;
+    background-image: url("images/top_1.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 .top_12 {
-    margin-left: -32px;
     font-size: 16px;
     font-family: "Roboto";
     color: white;
-    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .top_video {
     flex-grow: 1;
@@ -106,7 +113,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    flex-grow:1;
+    flex-grow: 1;
 }
 .clock {
     height: 50%;
@@ -166,9 +173,8 @@
     margin-top: 10px;
     font-size: 14px;
     font-family: "Roboto";
-    color: rgb( 186, 186, 186 );
+    color: rgb( 186, 186, 186);
 }
-
 .bottom_controls {
     display: flex;
     flex-wrap: wrap;
@@ -179,7 +185,7 @@
 .left {
     margin-top: 5px;
     height: 8%;
-    width:30%;
+    width: 30%;
     background-color: #f20425;
 }
 .right {
@@ -191,7 +197,7 @@
 .buttons {
     display: flex;
     align-items: center;
-    width:100%;
+    width: 100%;
     height: 85%;
     padding-left: 20px;
 }
@@ -206,7 +212,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    flex-grow:1;
+    flex-grow: 1;
     margin-right: 15px;
 }
 .sound,
@@ -240,34 +246,40 @@
     color: white;
 }
 input[type=checkbox].css-checkbox {
-                            position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
-                        }
-
-                        input[type=checkbox].css-checkbox + label.css-label {
-                            padding-left:40px;
-                            height:35px; 
-                            display:inline-block;
-                            line-height:35px;
-                            background-repeat:no-repeat;
-                            background-position: 0 0;
-                            font-size:35px;
-                            vertical-align:middle;
-                            cursor:pointer;
-
-                        }
-
-                        input[type=checkbox].css-checkbox:checked + label.css-label {
-                            background-position: 0 -35px;
-                        }
-                        label.css-label {
-                background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_b7d00bd807dc4c3fdea9e76763143a04.png);
-                -webkit-touch-callout: none;
-                -webkit-user-select: none;
-                -khtml-user-select: none;
-                -moz-user-select: none;
-                -ms-user-select: none;
-                user-select: none;
-            }
+    position: absolute;
+    z-index: -1000;
+    left: -1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+input[type=checkbox].css-checkbox + label.css-label {
+    padding-left: 40px;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    font-size: 35px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-position: 0 -35px;
+}
+label.css-label {
+    background-image: url(http://csscheckbox.com/checkboxes/u/csscheckbox_b7d00bd807dc4c3fdea9e76763143a04.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 .bottom_wr {
     background-color: #2f2f2f;
 }
@@ -284,34 +296,28 @@ input[type=checkbox].css-checkbox {
     margin-top: 5px;
     background-color: #2f2f2f;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .button_1 {
-        width: 60%;   
+        width: 60%;
     }
-
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .button_1 {
         width: 70%;
     }
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
     .button_1 {
         width: 80%;
-
     }
     .button_txt {
         padding-left: 5%;
     }
 }
-
-@media (max-width: 360px) {
+@media screen and (max-width: 360px) {
     .button_1 {
         width: 85%;
-
     }
     .button_txt {
         padding-left: 2%;
     }
 }
-
-
